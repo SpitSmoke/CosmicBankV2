@@ -41,9 +41,16 @@ const Hero = () => {
         >
           <HeroButton href="#services">Abra sua conta</HeroButton>
         </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.6, duration: 1 }}
+        >
+          <HeroButton href="#contact">Saiba Mais</HeroButton>
+        </motion.div>
       </HeroButtons>
     </SectionHero>
-  )
+  )          
 }
 
 export default Hero

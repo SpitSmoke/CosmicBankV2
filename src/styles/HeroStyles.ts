@@ -12,6 +12,7 @@ export const HeroTitle = styled.div`
   h1 {
     font-size: 4rem;
     font-weight: bold;
+    font-family: 'Orbitron', sans-serif;
     margin-botttom: 20px;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
     color: #fff;
@@ -19,6 +20,7 @@ export const HeroTitle = styled.div`
 
   p {
     font-size: 1.5rem;
+    font-family: 'Orbitron', sans-serif;
     margin-bottom: 30px;
     max-width: 600px;
     color: #fff;
@@ -70,4 +72,6 @@ export const HeroButtons = styled.div`
   justify-content: space-between;
   width: 100%;
   max-width: 600px;
+  padding: 20px;
+  font-family: 'Orbitron', sans-serif;
 `

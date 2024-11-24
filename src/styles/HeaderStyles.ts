@@ -30,22 +30,29 @@ export const Logo = styled.div`
 	font-weight: bold;
 `
 export const NavList = styled.ul`
-	list-style: none;
-	display: flex;
-	gap: 20px;
-
+  list-style: none;
+  font-family: 'Audiowide', serif;
+  display: flex;
+  gap: 20px;
 `
 
 export const NavItem = styled.li`
-	a {
-	color: #E0E0E0;
-	text-decoration: none;
-	font-size: 18px;
+  position: relative;
+  display: inline-block;
 
-	&:hover {
-	color: #E0E0E0;
-	}
-}
+  a {
+    color: #e0e0e0;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    padding: 10px 20px;
+    display: inline-block;
+    background-color: transparent;
+    overflow: hidden;
+
+    &:hover {
+      color: #4b84e8;
+    }
 `
 export const Hamburger = styled.div`
 	display: none;
