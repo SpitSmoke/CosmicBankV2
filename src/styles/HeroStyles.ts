@@ -7,8 +7,10 @@ export const SectionHero = styled.section`
   align-items: center;
   height: 100vh;
   text-align: center;
+  margin-top: 90px;
 `
 export const HeroTitle = styled.div`
+  display: flex;
   h1 {
     font-size: 4rem;
     font-weight: bold;
@@ -16,14 +18,15 @@ export const HeroTitle = styled.div`
     margin-botttom: 20px;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
     color: #fff;
+    margin-bottom: 30px;
   }
 
   p {
     font-size: 1.5rem;
     font-family: 'Orbitron', sans-serif;
-    margin-bottom: 30px;
     max-width: 600px;
     color: #fff;
+    padding: 70px;
   }
 `
 export const HeroButton = styled.a`
@@ -69,7 +72,8 @@ export const HeroButton = styled.a`
 `
 export const HeroButtons = styled.div`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   max-width: 600px;
   padding: 20px;

@@ -25,9 +25,9 @@ export const NavM = styled.nav`
 }
 `
 export const Logo = styled.div`
-	color: #E0E0E0;
-	font-size: 24px;
-	font-weight: bold;
+  color: #e0e0e0;
+  font-size: 24px;
+  font-weight: bold;
 `
 export const NavList = styled.ul`
   list-style: none;
@@ -37,10 +37,10 @@ export const NavList = styled.ul`
 `
 
 export const NavItem = styled.li`
-  position: relative;
-  display: inline-block;
+position: relative;
+display: inline-block;
 
-  a {
+a {
     color: #e0e0e0;
     text-decoration: none;
     font-size: 18px;
@@ -51,13 +51,26 @@ export const NavItem = styled.li`
     overflow: hidden;
 
     &:hover {
-      color: #4b84e8;
+        background: radial-gradient(circle, #ff69b4, #6a0572, #1b003a);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
     }
 `
 export const Hamburger = styled.div`
-	display: none;
-	cursor: pointer;
-	z-index: 1001;
+  display: none;
+  cursor: pointer;
+  z-index: 1001;
 `
 
-
+export const SpanCosmic = styled.span`
+  &:hover {
+    background: radial-gradient(circle, #ff69b4, #6a0572, #1b003a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+`
+export const SpanBank = styled.span`
+  &:hover {
+    color: #6a4c9c;
+  }
+`

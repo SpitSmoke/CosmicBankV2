@@ -1,32 +1,63 @@
 import { useState } from "react"
-import { Hamburger, Logo, NavItem, NavList, NavM } from "../styles/HeaderStyles"
-import "../styles/HeaderStyles"
+import { Link } from 'react-router-dom'
+import {
+  Hamburger,
+  Logo,
+  NavItem,
+  NavList,
+  NavM,
+  SpanBank,
+  SpanCosmic,
+} from '../styles/HeaderStyles'
+import '../styles/HeaderStyles'
 
 const Header = () => {
+  const [menuOpen, setMenuOpen] = useState(false)
 
-	const [menuOpen, setMenuOpen] = useState(false)
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen)
+  }
 
-	const toggleMenu = () => {
-		setMenuOpen(!menuOpen)
-	}
-
-	return (
-	<NavM>
-		<Logo>CosmicBank</Logo>
-		<Hamburger onClick={toggleMenu} className={menuOpen ? 'menu-open' : ''} >
-			<div className="hamburger"></div>
-			<div className="hamburger"></div>
-			<div className="hamburger"></div>
-		</Hamburger>
-		<NavList>
-			<NavItem><a href="#home">Home</a></NavItem>
-			<NavItem><a href="#about">About</a></NavItem>
-			<NavItem><a href="#services">Services</a></NavItem>
-			<NavItem><a href="#contacts">Contacts</a></NavItem>
-			<NavItem><a href="#login">Login</a></NavItem>
-		</NavList>
-	</NavM>
-	)
+  return (
+    <NavM>
+      <Logo>
+        <SpanCosmic>Cosmic</SpanCosmic>
+        <SpanBank>Bank</SpanBank>
+      </Logo>
+      <Hamburger onClick={toggleMenu} className={menuOpen ? 'menu-open' : ''}>
+        <div className="hamburger"></div>
+        <div className="hamburger"></div>
+        <div className="hamburger"></div>
+      </Hamburger>
+      <NavList>
+        <NavItem>
+          <Link to="/" style={{ textDecoration: 'none' }}>
+            <a>Home</a>
+          </Link>
+        </NavItem>
+        <NavItem>
+          <Link to="#about" style={{ textDecoration: 'none' }}>
+            <a>About</a>
+          </Link>
+        </NavItem>
+        <NavItem>
+          <Link to="#services" style={{ textDecoration: 'none' }}>
+            <a>Services</a>
+          </Link>
+        </NavItem>
+        <NavItem>
+          <Link to="#contacts" style={{ textDecoration: 'none' }}>
+            <a>Contacts</a>
+          </Link>
+        </NavItem>
+        <NavItem>
+          <Link to="login" style={{ textDecoration: 'none' }}>
+            <a>Login</a>
+          </Link>
+        </NavItem>
+      </NavList>
+    </NavM>
+  )
 }
 
 export default Header
