@@ -46,11 +46,6 @@ const Header = () => {
           </Link>
         </NavItem>
         <NavItem>
-          <Link to="#contacts" style={{ textDecoration: 'none' }}>
-            <a>Contacts</a>
-          </Link>
-        </NavItem>
-        <NavItem>
           <Link to="login" style={{ textDecoration: 'none' }}>
             <a>Login</a>
           </Link>

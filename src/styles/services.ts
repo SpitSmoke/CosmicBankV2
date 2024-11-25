@@ -20,9 +20,11 @@ export const ServicesGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 2rem;
+  position: relative;
 `
 
 export const ServiceCard = styled.div`
+  position: relative;
   background: #2a2a2a;
   border-radius: 10px;
   padding: 2rem;
@@ -33,6 +35,7 @@ export const ServiceCard = styled.div`
   &:hover {
     transform: translateY(-10px);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    z-index: 5;
   }
 
   h3 {

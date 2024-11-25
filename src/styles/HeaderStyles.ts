@@ -1,28 +1,29 @@
 import styled from "styled-components"
 
 export const NavM = styled.nav`
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	position: fixed;	
-	left:0;
-	height: 60px;
-	width: 100%;
-	background-color: #000000;
-	color: #ffffff;
-	padding: 10px 20px;
-	margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 10px 20px;
+  margin-top: 20px;
 
-	border-radius: 30px;
-	box-shadow: 0px 0px 10px rgba(0,0,0,0.9)
-	z-index: 1000;
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+  z-index: 10;
 
-	@media (max-width: 768px) {
-		width: 100%;
-		margin-right: 0;
-		margin-left: 0;
-		flex-direction: column;
-}
+  @media (max-width: 768px) {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+    flex-direction: column;
+  }
 `
 export const Logo = styled.div`
   color: #e0e0e0;
@@ -59,7 +60,6 @@ a {
 export const Hamburger = styled.div`
   display: none;
   cursor: pointer;
-  z-index: 1001;
 `
 
 export const SpanCosmic = styled.span`

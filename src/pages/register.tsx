@@ -1,5 +1,6 @@
 import { useState } from 'react'
-import { FormContainer } from '../styles/register'
+import { FormContainer, Input, Button, Error } from '../styles/register'
+import ParticlesBackground from '../components/particles'
 
 const Register = () => {
   const [formData, setFormData] = useState({
@@ -30,9 +31,12 @@ const Register = () => {
 
   return (
     <FormContainer onSubmit={handleSubmit}>
+      {/* Componente ParticlesBackground adicionado dentro do FormContainer */}
+      <ParticlesBackground />
+
       <h2>Cadastre-se</h2>
       <div>
-        <input
+        <Input
           type="text"
           name="name"
           placeholder="Nome"
@@ -42,7 +46,7 @@ const Register = () => {
         />
       </div>
       <div>
-        <input
+        <Input
           type="email"
           name="email"
           placeholder="E-mail"
@@ -52,7 +56,7 @@ const Register = () => {
         />
       </div>
       <div>
-        <input
+        <Input
           type="password"
           name="password"
           placeholder="Senha"
@@ -62,7 +66,7 @@ const Register = () => {
         />
       </div>
       <div>
-        <input
+        <Input
           type="password"
           name="confirmPassword"
           placeholder="Confirmar Senha"
@@ -71,8 +75,8 @@ const Register = () => {
           required
         />
       </div>
-      {error && <p style={{ color: 'red' }}>{error}</p>}
-      <button type="submit">Cadastrar</button>
+      {error && <Error>{error}</Error>}
+      <Button type="submit">Cadastrar</Button>
     </FormContainer>
   )
 }
