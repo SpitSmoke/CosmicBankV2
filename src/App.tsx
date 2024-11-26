@@ -11,7 +11,7 @@ function App() {
   return (
     <Router>
       <GlobalStyle />
-
+      <Header />
       <main>
         <Routes>
           <Route
@@ -33,6 +33,9 @@ function App() {
           <Route path="/register" element={<Register />} />
         </Routes>
       </main>
+      <>
+        <Footer />
+      </>
     </Router>
   )
 }

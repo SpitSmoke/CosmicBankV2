@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { FormContainer, Input, Button, Error } from '../styles/register'
-import ParticlesBackground from '../components/particles'
+
 
 const Register = () => {
   const [formData, setFormData] = useState({
@@ -32,7 +32,6 @@ const Register = () => {
   return (
     <FormContainer onSubmit={handleSubmit}>
       {/* Componente ParticlesBackground adicionado dentro do FormContainer */}
-      <ParticlesBackground />
 
       <h2>Cadastre-se</h2>
       <div>
