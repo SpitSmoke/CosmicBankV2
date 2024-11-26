@@ -13,6 +13,11 @@ export const FormContainer = styled.form`
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
   z-index: 2;
+
+    p {
+    margin-top: 20px;
+    color: #e0e0e0:
+}
 `
 
 export const Input = styled.input`

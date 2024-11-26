@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import { useState } from 'react'
 import axios from 'axios'
 import {
@@ -6,7 +7,7 @@ import {
   LoginButton,
   LoginWrapper,
 } from '../styles/login'
-import { useNavigate } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -67,9 +68,11 @@ const Login = () => {
           {loading ? 'Carregando...' : 'Entrar'}
         </LoginButton>
         {error && <p style={{ color: 'red' }}>{error}</p>}
-        <p>
-          Não tem uma conta? <a href="/register">Cadastre-se</a>
-        </p>
+        <Link to="/register">
+          <p>
+            Não tem uma conta? <a>Cadastre-se</a>
+          </p>
+        </Link>
       </FormContainer>
     </LoginWrapper>
   )

@@ -24,7 +24,9 @@ const Footer = () => {
           <CTAButton href="#register">Criar Conta</CTAButton>
         </Link>
 
-        <CTAButton href="#login">Login</CTAButton>
+        <Link to="/login">
+          <CTAButton href="#login">Login</CTAButton>
+        </Link>
       </CTASection>
 
       <FooterLinks>

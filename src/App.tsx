@@ -6,6 +6,7 @@ import About from './components/about'
 import Services from './components/services'
 import Footer from './components/footer'
 import Register from './pages/register'
+import Login from './pages/login'
 
 function App() {
   return (
@@ -31,6 +32,7 @@ function App() {
             }
           />
           <Route path="/register" element={<Register />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </main>
       <>

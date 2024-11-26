@@ -1,5 +1,7 @@
 import { useState } from 'react'
 import { FormContainer, Input, Button, Error } from '../styles/register'
+import { Link } from 'react-router-dom'
+
 
 
 const Register = () => {
@@ -31,8 +33,6 @@ const Register = () => {
 
   return (
     <FormContainer onSubmit={handleSubmit}>
-      {/* Componente ParticlesBackground adicionado dentro do FormContainer */}
-
       <h2>Cadastre-se</h2>
       <div>
         <Input
@@ -76,6 +76,9 @@ const Register = () => {
       </div>
       {error && <Error>{error}</Error>}
       <Button type="submit">Cadastrar</Button>
+      <p>
+        Já tem uma conta? <Link to="/login">Faça login</Link>
+      </p>
     </FormContainer>
   )
 }

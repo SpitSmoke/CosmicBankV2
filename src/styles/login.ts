@@ -6,6 +6,9 @@ export const LoginWrapper = styled.div`
   justify-content: center;
   height: 100vh;
   background: linear-gradient(135deg, #1b003a, #6a0572);
+  margin: 0; /* Garantir que não haja margem */
+  padding: 0; /* Garantir que não haja padding extra */
+  box-sizing: border-box; /* Garantir que o padding e margin sejam calculados corretamente */
 `
 
 export const FormContainer = styled.form`
@@ -17,7 +20,6 @@ export const FormContainer = styled.form`
   text-align: center;
   width: 100%;
   max-width: 400px;
-  margin-top: 50px;
 
   h2 {
     color: #fff;
@@ -40,7 +42,6 @@ export const FormContainer = styled.form`
   }
 `
 
-// Campo de entrada
 export const InputField = styled.input`
   width: 100%;
   padding: 12px 16px;
@@ -62,7 +63,7 @@ export const InputField = styled.input`
   }
 `
 
-// Botão de login
+
 export const LoginButton = styled.button`
   width: 100%;
   padding: 12px 16px;
